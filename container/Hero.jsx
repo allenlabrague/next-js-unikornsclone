@@ -26,7 +26,7 @@ export default function Hero() {
         <MaskTextBodyText phrases={phrasesBodyText} />
         <motion.div
           variants={textVariant(0.4)}
-          className="flex items-center justify-between mt-10 md:w-[425px]"
+          className="flex items-center justify-between mt-10 md:w-[535px]"
         >
           <div className="flex items-center gap-3">
             <Image

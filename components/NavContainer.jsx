@@ -11,7 +11,7 @@ const NavContainer = () => {
   const links = [
     { src: "/1.jpg", text: "Home", link: "home" },
     { src: "/2.jpg", text: "Gallery", link: "gallery" },
-    { src: "/3.jpg", text: "Testimonials", link: "testimonials" },
+    { src: "/3.jpg", text: "Projects", link: "projects" },
     { src: "/4.jpg", text: "Testimonials", link: "testimonials" },
     { src: "/5.jpg", text: "Testimonials", link: "testimonials" },
   ];

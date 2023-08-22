@@ -25,7 +25,7 @@ export function MaskTextBodyText({ phrases }) {
               custom={index}
               initial="initial"
               animate={isView ? "open" : ""}
-              className="font-medium md:leading-none leading-relaxed md:text-2xl text-base"
+              className="font-medium leading-relaxed md:text-2xl lg:text-3xl text-base"
             >
               {phrase}
             </motion.p>
@@ -57,7 +57,7 @@ export function MaskTextHeading({ phrases }) {
               custom={index}
               initial="initial"
               animate={isView ? "open" : ""}
-              className="font-medium leading-tight md:leading-tight md:text-7xl tracking-tight text-4xl"
+              className="font-medium md:text-7xl tracking-tight text-4xl py-2"
             >
               {phrase}
             </motion.h2>

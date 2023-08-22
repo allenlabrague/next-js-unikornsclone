@@ -8,7 +8,8 @@ import {
   Players,
   Feedback,
   Footer,
-  Discover,
+  Gallery,
+  Project,
 } from "@/container";
 import MobileNotification from "@/components/MobileNotification";
 
@@ -36,10 +37,11 @@ export default function Home() {
       {showMobileNotification && <MobileNotification />}
       <Navbar />
       <Hero />
-      <div className="bg-white h-[200vh]s w-full overflow-hidden">
+      <div className="bg-white h-[300vh] w-full overflow-hidden">
         <Parallax />
       </div>
-      <Discover />
+      <Project />
+      <Gallery />
       <Players />
       <Feedback />
       <Footer />

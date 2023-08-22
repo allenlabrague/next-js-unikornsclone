@@ -5,7 +5,11 @@ export const phrasesBodyText = [
   "and business needs are simpatico.",
 ];
 
-export const phrasesHeading = ["Creative Design", "& Development", "Agency"];
+export const phrasesHeading = [
+  "Where Creative Developers",
+  "& Aesthetic Design",
+  "Converge flawlessly.",
+];
 
 export const phrasesModal = [
   "It appears that you are not currently",
@@ -14,4 +18,13 @@ export const phrasesModal = [
   "using a desktop view. However,",
   "if you prefer, you can also choose to",
   "use the mobile view, as it's optional.",
+];
+
+export const phrasesProject = ["Our projects"];
+
+export const phrasesBodyProject = [
+  "We've crushed it on lots of",
+  "projects, and we've got the",
+  "receipts to prove it in our big ol'",
+  "portfolio of case studies.",
 ];

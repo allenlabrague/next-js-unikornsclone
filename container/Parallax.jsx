@@ -36,7 +36,7 @@ export default function Parallax() {
     <div>
       <div
         ref={container}
-        className=" h-[175vh] bg-[rgb(45,45,45)] flex flex-row gap-[2vw] p-[2vw] box-border [&>*:nth-child(1)]:top-[-45%] [&>*:nth-child(2)]:top-[-95%] [&>*:nth-child(3)]:top-[-45%] [&>*:nth-child(4)]:top-[-75%] relative"
+        className=" h-[300vh] bg-[rgb(45,45,45)] flex flex-row gap-[2vw] p-[2vw] box-border [&>*:nth-child(1)]:top-[-45%] [&>*:nth-child(2)]:top-[-55%] [&>*:nth-child(3)]:top-[-25%] [&>*:nth-child(4)]:top-[-75%] relative shadow-[0px_-51px_96px_40px_rgba(0,0,0,1)_inset]"
       >
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2} />
