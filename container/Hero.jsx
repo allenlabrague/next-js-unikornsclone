@@ -2,12 +2,12 @@
 
 import { MaskTextBodyText, MaskTextHeading } from "@/components/CustomText";
 import { phrasesBodyText, phrasesHeading } from "@/constants";
-import { Avatar } from "@nextui-org/avatar";
 import { Button } from "@nextui-org/button";
 import { Divider } from "@nextui-org/divider";
 import { BsFillPlayFill } from "react-icons/bs";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -29,11 +29,26 @@ export default function Hero() {
           className="flex items-center justify-between mt-10 md:w-[425px]"
         >
           <div className="flex items-center gap-3">
-            <Avatar src="/ceo1.png" className="w-16 h-16 text-large" />
-            <Avatar src="/ceo2.png" className="w-16 h-16 text-large" />
-            <Avatar
+            <Image
+              width={65}
+              height={65}
+              src="/ceo1.png"
+              alt="ceo1"
+              className="rounded-full"
+            />
+            <Image
+              width={65}
+              height={65}
+              src="/ceo2.png"
+              alt="ceo2"
+              className="rounded-full"
+            />
+            <Image
+              width={65}
+              height={65}
               src="/ceo3.png"
-              className="w-16 h-16 text-large hidden md:block"
+              alt="ceo3"
+              className="rounded-full hidden md:block"
             />
           </div>
           <div className="flex items-center gap-3">

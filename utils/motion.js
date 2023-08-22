@@ -131,41 +131,6 @@ export const textVariant2 = {
   },
 };
 
-export const fadeIn = (direction, type, delay, duration) => ({
-  hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-    opacity: 0,
-  },
-  show: {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    transition: {
-      type,
-      delay,
-      duration,
-      ease: "easeOut",
-    },
-  },
-});
-
-export const planetVariants = (direction) => ({
-  hidden: {
-    x: direction === "left" ? "-100%" : "100%",
-    rotate: 120,
-  },
-  show: {
-    x: 0,
-    rotate: 0,
-    transition: {
-      type: "spring",
-      duration: 1.8,
-      delay: 0.5,
-    },
-  },
-});
-
 export const zoomIn = (delay, duration) => ({
   hidden: {
     scale: 0,
@@ -204,23 +169,65 @@ export const footerVariants = {
   },
 };
 
-export const EbikeSlide = {
-  enter: (direction) => {
-    return {
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0,
-    };
+const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
+
+export const height = {
+  initial: {
+    height: 0,
   },
-  center: {
-    zIndex: 1,
-    x: 0,
+  enter: {
+    height: "auto",
+    transition,
+  },
+  exit: {
+    height: 0,
+    transition,
+  },
+};
+
+export const translate = {
+  initial: {
+    y: "100%",
+  },
+  open: (i) => ({
+    y: 0,
+    opacity: 1,
+    transition: { ...transition, delay: i[0] },
+  }),
+  exit: (i) => ({
+    y: "100%",
+    opacity: 0,
+    transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1] },
+  }),
+};
+
+export const blur = {
+  initial: {
+    filter: "blur(0px)",
     opacity: 1,
   },
-  exit: (direction) => {
-    return {
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
-    };
+  open: {
+    filter: "blur(2px)",
+    opacity: 0.6,
+    transition: { duration: 0.3 },
+  },
+  closed: {
+    filter: "blur(0px)",
+    opacity: 1,
+    transition: { duration: 0.3 },
+  },
+};
+
+export const background = {
+  initial: {
+    height: 0,
+  },
+  enter: {
+    height: "100vh",
+    transition,
+  },
+  exit: {
+    height: 0,
+    transition,
   },
 };

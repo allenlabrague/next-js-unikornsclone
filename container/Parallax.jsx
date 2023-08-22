@@ -52,6 +52,7 @@ const Column = ({ images, y }) => {
     <motion.div
       style={{ y }}
       className="w-[25%] h-full flex flex-col gap-[2vw] min-w-[250px] relative"
+      id="gallery"
     >
       {images.map((src, index) => {
         return (
