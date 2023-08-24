@@ -6,16 +6,9 @@ import NavFooter from "./NavFooter";
 import NavImage from "./NavImage";
 import { height } from "@/utils/motion";
 import { useState } from "react";
+import { links } from "@/constants";
 
 const NavContainer = () => {
-  const links = [
-    { src: "/1.jpg", text: "Home", link: "home" },
-    { src: "/2.jpg", text: "Gallery", link: "gallery" },
-    { src: "/3.jpg", text: "Projects", link: "projects" },
-    { src: "/4.jpg", text: "Testimonials", link: "testimonials" },
-    { src: "/5.jpg", text: "Testimonials", link: "testimonials" },
-  ];
-
   const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,

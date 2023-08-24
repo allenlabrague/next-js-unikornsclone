@@ -7,6 +7,7 @@ import { navVariants, background } from "@/utils/motion";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import NavContainer from "@/components/NavContainer";
+import { opacity } from "@/utils/motion";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -69,17 +70,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-export const opacity = {
-  initial: {
-    opacity: 0,
-  },
-  open: {
-    opacity: 1,
-    transition: { duration: 0.25 },
-  },
-  closed: {
-    opacity: 0,
-    transition: { duration: 0.35 },
-  },
-};

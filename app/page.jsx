@@ -5,13 +5,15 @@ import {
   Navbar,
   Hero,
   Parallax,
-  Players,
+  Testimonials,
   Feedback,
   Footer,
   Gallery,
   Project,
 } from "@/container";
 import MobileNotification from "@/components/MobileNotification";
+import { totalReviews } from "@/constants";
+import InfiniteTextMove from "@/components/InfiniteTextMove";
 
 export default function Home() {
   const [showMobileNotification, setShowMobileNotification] = useState(false);
@@ -37,13 +39,12 @@ export default function Home() {
       {showMobileNotification && <MobileNotification />}
       <Navbar />
       <Hero />
-      <div className="bg-white h-[300vh] w-full overflow-hidden">
-        <Parallax />
-      </div>
+      <Parallax />
       <Project />
       <Gallery />
-      <Players />
-      <Feedback />
+      <Testimonials />
+      <Feedback totalReviews={totalReviews} />
+      <InfiniteTextMove />
       <Footer />
     </>
   );

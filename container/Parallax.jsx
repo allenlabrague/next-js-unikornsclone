@@ -33,7 +33,7 @@ export default function Parallax() {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div
         ref={container}
         className=" h-[300vh] bg-[rgb(45,45,45)] flex flex-row gap-[2vw] p-[2vw] box-border [&>*:nth-child(1)]:top-[-45%] [&>*:nth-child(2)]:top-[-55%] [&>*:nth-child(3)]:top-[-25%] [&>*:nth-child(4)]:top-[-75%] relative shadow-[0px_-51px_96px_40px_rgba(0,0,0,1)_inset]"

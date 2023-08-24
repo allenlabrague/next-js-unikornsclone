@@ -46,8 +46,8 @@ const Gallery = () => {
               />
             </div>
           ))}
-          <div className="bg-white flex-col gap-10 text-black flex items-center justify-center text-4xl w-[100%] md:w-[70%] h-screen">
-            <h3 className="font-medium text-base md:text-2xl">Want more?</h3>
+          <div className="bg-white flex-col gap-5 text-black flex items-center justify-center text-4xl w-[100%] md:w-[70%] h-screen">
+            <h3 className="font-medium text-base md:text-4xl">Want more?</h3>
             <p className="text-sm md:text-base">Keep scrolling...</p>
             <div className="p-1 md:p-3 bg-white rounded-full border-1 border-black animate-bounce">
               <AiOutlineArrowDown className="text-[18px] md:text-[25px]" />
