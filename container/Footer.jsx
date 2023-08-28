@@ -27,7 +27,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="bg-[#ffd439] p-5 lg:p-10 rounded-3xl w-full md:w-[50%]">
+        <div className="bg-[#ffd439] p-5 lg:p-10 rounded-3xl w-full md:w-[50%] mt-12 md:mt-0">
           <h4 className="text-sm text-gray-600">Experience</h4>
           {footerCard.map((e, index) => (
             <h3
