@@ -3,7 +3,7 @@ export const links = [
   { src: "/2.jpg", text: "Gallery", link: "gallery" },
   { src: "/3.jpg", text: "Projects", link: "projects" },
   { src: "/4.jpg", text: "FeedBack", link: "feedBack" },
-  { src: "/5.jpg", text: "Testimonials", link: "testimonials" },
+  { src: "/5.jpg", text: "Expertise", link: "expertise" },
 ];
 
 export const phrasesBodyText = [
@@ -44,6 +44,8 @@ export const phrasesBodyTestimonials = [
   "indicator of collaboration success",
   "and approach to a project.",
 ];
+
+export const phrasesFooter = ["Expertise"];
 
 export const totalReviews = [
   {
@@ -129,5 +131,32 @@ export const totalReviews = [
       { image: "/star.svg" },
       { image: "/star.svg" },
     ],
+  },
+];
+
+export const footerDetails = [
+  {
+    title: "Specialization",
+    companies: [
+      { companyName: "Brand visualization" },
+      { companyName: "Marketing websites" },
+      { companyName: "Corporate websites" },
+      { companyName: "Digital products" },
+    ],
+  },
+  {
+    title: "Industries",
+    companies: [
+      { companyName: "Real estate" },
+      { companyName: "Fintech" },
+      { companyName: "Edtech" },
+      { companyName: "Lodging" },
+    ],
+  },
+];
+
+export const footerCard = [
+  {
+    disc: "Our crew got tons of experience, so you know we'll come through with cool stuff and make sure our communication game is on point.",
   },
 ];
