@@ -57,7 +57,7 @@ export function MaskTextHeading({ phrases }) {
               custom={index}
               initial="initial"
               animate={isView ? "open" : ""}
-              className="font-medium md:text-7xl tracking-tight text-4xl py-2"
+              className="font-medium md:text-4xl lg:text-7xl tracking-tight text-3xl py-2"
             >
               {phrase}
             </motion.h2>

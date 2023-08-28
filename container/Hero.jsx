@@ -8,6 +8,9 @@ import { BsFillPlayFill } from "react-icons/bs";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Lottie from "lottie-react";
+
+import scrollDown from "/public/scroll.json";
 
 export default function Hero() {
   return (
@@ -16,17 +19,28 @@ export default function Hero() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="p-10 lg:w-[95%] lg:mx-auto flex flex-col justify-between h-screen"
+      className="p-10 lg:w-[95%] lg:mx-auto flex flex-col justify-between h-screen relative"
       id="home"
     >
-      <div className=" mt-8">
+      <motion.div
+        variants={textVariant(0.3)}
+        className=" absolute bottom-[250px] lg:bottom-[100px] left-0 right-0 mx-auto"
+      >
+        <h3 className="font-medium animate-bounce text-center">
+          Keep scrolling...
+        </h3>
+        <div className="w-[100px] mx-auto">
+          <Lottie animationData={scrollDown} />
+        </div>
+      </motion.div>
+      <div className="mt-8">
         <MaskTextHeading phrases={phrasesHeading} />
       </div>
       <div className="md:flex md:flex-col md:items-end">
         <MaskTextBodyText phrases={phrasesBodyText} />
         <motion.div
           variants={textVariant(0.4)}
-          className="flex items-center justify-between mt-10 md:w-[535px]"
+          className="flex items-center justify-between mt-10 md:w-[430px] lg:w-[535px]"
         >
           <div className="flex items-center gap-3">
             <Image
