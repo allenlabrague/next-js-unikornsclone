@@ -14,6 +14,7 @@ import {
 import MobileNotification from "@/components/MobileNotification";
 import { totalReviews } from "@/constants";
 import InfiniteTextMove from "@/components/InfiniteTextMove";
+import SmoothScroll from "@/components/SmoothScrolling";
 
 export default function Home() {
   const [showMobileNotification, setShowMobileNotification] = useState(false);
@@ -36,16 +37,18 @@ export default function Home() {
 
   return (
     <>
-      {showMobileNotification && <MobileNotification />}
-      <Navbar />
-      <Hero />
-      <Parallax />
-      <Project />
-      <Gallery />
-      <Testimonials />
-      <Feedback totalReviews={totalReviews} />
-      <InfiniteTextMove />
-      <Footer />
+      <SmoothScroll>
+        {showMobileNotification && <MobileNotification />}
+        <Navbar />
+        <Hero />
+        <Parallax />
+        <Project />
+        <Gallery />
+        <Testimonials />
+        <Feedback totalReviews={totalReviews} />
+        <InfiniteTextMove />
+        <Footer />
+      </SmoothScroll>
     </>
   );
 }
